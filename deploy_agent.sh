@@ -1,7 +1,14 @@
 #!/bin/bash
 
 deploy () {
-    echo "Deploy selected"
+    if ! command -v python3 > /dev/null; then
+ echo "Uninstalled python3"
+exit 1
+fi
+if ! command -v zip > /dev/null; then
+echo "Uninstalled zip"
+exit 1
+fi
 }
 
 run_app() {
