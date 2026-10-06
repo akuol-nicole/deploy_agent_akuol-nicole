@@ -9,6 +9,13 @@ if ! command -v zip > /dev/null; then
 echo "Uninstalled zip"
 exit 1
 fi
+ read -p "Enter project name: " name
+if [ -z "$name" ]; then
+echo "Project name can't be empty" >&2
+return
+fi
+dir_name="attendance_tracker_$name"
+echo "$dir_name"
 }
 
 run_app() {
