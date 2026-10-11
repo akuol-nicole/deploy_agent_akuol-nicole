@@ -33,6 +33,14 @@ read -p "How many students? " count
 
 if [ "$roster_choice" = "A" ]; then
 head -n $((count+1)) templates/assets.csv > "$dir_name/Helpers/assets.csv"
+elif [ "$roster_choice" = "B" ]; then
+names=("Alice Johnson" "Bob Smith" "Charlie Davis" "Diana Prince" "Ethan Cole" "Fatima Noor" "George Mensah" "Hannah Kim" "Ibrahim Osei" "Jasmine Lee")
+emails=("alice@example.com" "bob@example.com" "charlie@example.com" "diana@example.com" "ethan@example.com" "fatima@example.com" "george@example.com" "hannah@example.com" "ibrahim@example.com" "jasmine@gmail.com")
+echo "Email,Names,Attendance Count,Absence Count" > "$dir_name/Helpers/assets.csv"
+for  ((i=o; i<count; i++)); do 
+echo "${emails[$i]},${names[$i]},0,0" >> "$dir_name/Helpers/assets.csv"
+done
+sed -i 's/"total_sessions": [0-9]*/"total_sessions": 1/' "$dir_name/Helpers/config.json"
 fi
 
 
