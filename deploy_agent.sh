@@ -16,6 +16,16 @@ return
 fi
 dir_name="attendance_tracker_$name"
 echo "$dir_name"
+if [ -d "$dir_name" ]; then
+read -p "Overwrite? (y/n): " answer
+if [ "$answer" = "y" ]; then
+rm -rf "$dir_name"
+else
+echo "Aborted: $dir_name kept"
+return
+fi
+fi
+
 }
 
 run_app() {
