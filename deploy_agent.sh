@@ -42,6 +42,8 @@ echo "${emails[$i]},${names[$i]},0,0" >> "$dir_name/Helpers/assets.csv"
 done
 sed -i 's/"total_sessions": [0-9]*/"total_sessions": 1/' "$dir_name/Helpers/config.json"
 fi
+chmod +x "$dir_name/attendance_checker.py"
+chmod 600 "$dir_name/Helpers/config.json"
 
 
 }
