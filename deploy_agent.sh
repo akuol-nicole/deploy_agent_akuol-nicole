@@ -44,7 +44,17 @@ sed -i 's/"total_sessions": [0-9]*/"total_sessions": 1/' "$dir_name/Helpers/conf
 fi
 chmod +x "$dir_name/attendance_checker.py"
 chmod 600 "$dir_name/Helpers/config.json"
-
+read -p "Update thresholds? (y/n): " update
+if [ "$update" = "y" ]; then
+read -p "Warning [75]: " warn
+read -p "Failure [50]: " fail
+if [[ "$warn" =~ ^[0-9]+$ ]] && [[ "$fail" =~ ^[0-9]+$ ]]; then
+sed -i "s/\"warning\": [0-9]*/\"warning\": $warn/" "$dir_name/Helpers/config.json"
+sed -i "s/\"failure\": [0-9]*/\"failure\": $fail/" "$dir_name/Helpers/config.json"
+else
+echo "Invalid input: numbers only" >&2
+fi
+fi
 
 }
 
