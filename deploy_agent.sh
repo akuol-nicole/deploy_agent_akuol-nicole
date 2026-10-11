@@ -25,6 +25,8 @@ echo "Aborted: $dir_name kept"
 return
 fi
 fi
+mkdir -p "$dir_name/Helpers" "$dir_name/reports"
+
 
 }
 
