@@ -26,6 +26,8 @@ return
 fi
 fi
 mkdir -p "$dir_name/Helpers" "$dir_name/reports"
+cp templates/attendance_checker.py "$dir_name/"
+cp templates/config.json "$dir_name/Helpers/"
 
 
 }
