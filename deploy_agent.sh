@@ -28,6 +28,12 @@ fi
 mkdir -p "$dir_name/Helpers" "$dir_name/reports"
 cp templates/attendance_checker.py "$dir_name/"
 cp templates/config.json "$dir_name/Helpers/"
+read -p "Roster: A) copy from template or B) generate? " roster_choice
+read -p "How many students? " count
+
+if [ "$roster_choice" = "A" ]; then
+head -n $((count+1)) templates/assets.csv > "$dir_name/Helpers/assets.csv"
+fi
 
 
 }
