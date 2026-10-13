@@ -1,4 +1,4 @@
-#!!/bin/bash
+#!/bin/bash
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TEMPLATES_DIR="$SCRIPT_DIR/templates"
 PREFIX="attendance_tracker_"
