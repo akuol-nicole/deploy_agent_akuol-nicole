@@ -37,4 +37,6 @@ The deployment agent provisions standalone environment instances using the folde
     │   └── absent.log           # Records of absent students
     └── archives/                # Backups created by log archiving
         ├── attendance/          # attendance_YYYYMMDD_HHMMSS.log
-        └── absent/              # absent_YYYYMMDD_HHMMSS.log
+
+video
+video link:
