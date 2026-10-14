@@ -39,4 +39,4 @@ The deployment agent provisions standalone environment instances using the folde
         ├── attendance/          # attendance_YYYYMMDD_HHMMSS.log
 
 video
-video link:
+video link: https://drive.google.com/file/d/1fmRAlR8dcoAPxhHEhSgpzQoq1TKJVJMg/view?usp=sharing
