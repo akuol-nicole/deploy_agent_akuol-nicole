@@ -38,5 +38,17 @@ The deployment agent provisions standalone environment instances using the folde
     └── archives/                # Backups created by log archiving
         ├── attendance/          # attendance_YYYYMMDD_HHMMSS.log
 
+<<<<<<< HEAD
 video
 video link: https://drive.google.com/file/d/1fmRAlR8dcoAPxhHEhSgpzQoq1TKJVJMg/view?usp=sharing
+=======
+---
+
+## 🎥 Demonstration Video
+
+Click here to view the recorded project demo:  
+[**▶ Watch Demonstration Video (Google Drive)**](https://drive.google.com/file/d/1fmRA1R8dcoAPxhHEhSgpzQoq1TKJVJMg/view?usp=sharing)
+
+Direct Link:  
+`https://drive.google.com/file/d/1fmRA1R8dcoAPxhHEhSgpzQoq1TKJVJMg/view?usp=sharing`
+>>>>>>> 8a50962 (Highlight project walkthrough video link in README)
